@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Markdown Blog</title>
+	<link rel="stylesheet" href="/node_modules/semantic-ui-css/semantic.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- Your code starts here ! -->
+
+	<div class="ui inverted  menu">
+		<a class=" item" id="recup4">
+			Menu
+		</a>
+		<a class="item" id="recup1">
+			Markdown
+		</a>
+		<a class="item" id="recup2">
+			Alice
+		</a>
+		<a class="item" id="recup3">
+			Json
+		</a>
+	</div>
+
+
+	<div id="json"></div>
+	<div id="markdown"></div>
+	<div id="alice"></div>
+	
+
+	<div class="ui container">
+		<form action="/create" class="ui form" method="post">
+			<div id="menu">
+				<label for="spanTitle"></label>
+				<input type="text" placeholder="Title" id="inputTitle">
+				<label for="spanTextarea"></label>
+				<textarea id="inputTextarea"></textarea>
+				<button class="ui button green labeled icon" id="buttonSave">
+					<i class="icon save"></i> Enregistrer 
+				</button>
+			</div>
+		</form>
+	</div>
+
+
+
+	<!-- fin de votre html -->
+	<script src="/node_modules/jquery/dist/jquery.js"></script>
+	<script src="/node_modules/showdown/dist/showdown.js"></script>
+	<script src="app.js"></script>
+
+</body>
+</html>
